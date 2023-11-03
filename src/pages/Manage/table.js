@@ -27,7 +27,6 @@ const columns = [
     label: "Area",
     minWidth: 170,
     format: (value) => value.toLocaleString("en-US"),
-    // align: "right",
   },
 ];
 
@@ -54,11 +53,7 @@ export default function DataTable({
 
       <Paper sx={{ width: "100%", overflow: "hidden" }} justifyContent="center">
         <TableContainer sx={{ maxHeight: 440 }}>
-          <Table
-            stickyHeader
-            aria-label="sticky table"
-            // style={{ backgroundColor: "#B2BEB5" }}
-          >
+          <Table stickyHeader aria-label="sticky table">
             <TableHead>
               <TableRow>
                 {columns.map((column) => (
@@ -67,8 +62,7 @@ export default function DataTable({
                     align={column.align}
                     style={{
                       minWidth: column.minWidth,
-                      //   backgroundColor: "#B2BEB5",
-                      //   backgroundColor: "#F2F7F4",
+
                       backgroundColor: "#7A7D7B",
                       color: "#FFFFFF",
                     }}
@@ -89,7 +83,6 @@ export default function DataTable({
                       tabIndex={-1}
                       key={row.code}
                       style={{
-                        //   backgroundColor: "#B2BEB5",
                         backgroundColor: "#F2F7F4",
                       }}
                     >

@@ -56,7 +56,6 @@ const ManageCountries = ({}) => {
     if (searchedData?.length) {
       searchedData?.map((item, index) => {
         rows.push({
-          // id: item?.idd?.root,
           id: index + 1,
           no: index + 1,
           name: item?.name?.official,

@@ -44,7 +44,6 @@ const SearchForm = ({
             <Grid container style={{ marginTop: 20 }} justifyContent="center">
               <Button
                 variant="contained"
-                // onClick={handleOnSubmit}
                 type="submit"
                 style={{ marginRight: 20, backgroundColor: "#7A7D7B" }}
               >
@@ -52,7 +51,6 @@ const SearchForm = ({
               </Button>
               <Button
                 variant="contained"
-                // onClick={handleReset}
                 type="reset"
                 style={{ backgroundColor: "#7A7D7B" }}
               >
